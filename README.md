@@ -4,6 +4,6 @@ Hier zouden regelmatig nieuwe dingen op moeten komen. Maar mij kennende gaat dit
 
 # CSharp
 
-https://dotnetfiddle.net/OQCVcK
-https://dotnetfiddle.net/s3oZhI 
+- [Drankautomaat] (https://dotnetfiddle.net/OQCVcK)
+- [Gemiddelde](https://dotnetfiddle.net/s3oZhI) 
 # Javascript
