@@ -6,4 +6,5 @@ Hier zouden regelmatig nieuwe dingen op moeten komen. Maar mij kennende gaat dit
 
 - [Drankautomaat] (https://dotnetfiddle.net/OQCVcK)
 - [Gemiddelde](https://dotnetfiddle.net/s3oZhI) 
+
 # Javascript
