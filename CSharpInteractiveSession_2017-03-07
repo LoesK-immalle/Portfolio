@@ -1,0 +1,18 @@
+> string x = "België";
+> string y = "Deutschland";
+> string z = "England";
+> x + " ,"+y+" ,"+z+ "."
+"België ,Deutschland ,England."
+> x + ", "+y+", "+z+ "."
+"België, Deutschland, England."
+> string[,] playerSide;
+> string[,] chessBoard = new string[8, 8];
+> for (int row = 0; row < 8; row++)
+. {
+.     for (int col = 0; col < 8; col++) {
+.         chessBoard[row, col] = "empty";
+.     }
+. }
+> chessBoard
+string[8, 8] { { "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty" }, { "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty" }, { "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty" }, { "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty" }, { "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty" }, { "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty" }, { "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty" }, { "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty" } }
+> 
