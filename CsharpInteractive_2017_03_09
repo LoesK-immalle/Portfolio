@@ -129,3 +129,99 @@ suoicodilaipxecitsiligarfilacrepuS
 > Console.WriteLine(outputString);
 GAUGGAACUUGACUACGUAAAUU
 > 
+> Environment.CurrentDirectory();
+(1,13): error CS1955: Non-invocable member 'Environment.CurrentDirectory' cannot be used like a method.
+> Environment.CurrentDirectory;
+(1,1): error CS0201: Only assignment, call, increment, decrement, and new object expressions can be used as a statement
+> Environment.GetFolderPath(Environment.SpecialFolder);
+(1,27): error CS0119: 'Environment.SpecialFolder' is a type, which is not valid in the given context
+> Environment.GetFolderPath(Environment.SpecialFolder Loes Soft);
+(1,53): error CS1003: Syntax error, ',' expected
+(1,58): error CS1003: Syntax error, ',' expected
+> Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+> Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+> Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
+\\imma-fs-0003\loes.kenis$\documents
+> Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))
+string[14] { "\\\\imma-fs-0003\\loes.kenis$\\documents\\2016-11-17-Test1_Water.xlsx", "\\\\imma-fs-0003\\loes.kenis$\\documents\\2016-11-17-Test1_Water_KenisLoes.xlsx", "\\\\imma-fs-0003\\loes.kenis$\\documents\\Blah blah blah blah.zip", "\\\\imma-fs-0003\\loes.kenis$\\documents\\codeOlympiade.txt", "\\\\imma-fs-0003\\loes.kenis$\\documents\\desktop.ini", "\\\\imma-fs-0003\\loes.kenis$\\documents\\gitignore_global.txt", "\\\\imma-fs-0003\\loes.kenis$\\documents\\hgignore_global.txt", "\\\\imma-fs-0003\\loes.kenis$\\documents\\Loes Kenis.html", "\\\\imma-fs-0003\\loes.kenis$\\documents\\SchoolHomeworkSheet.docx", "\\\\imma-fs-0003\\loes.kenis$\\documents\\teaser_infodag.jpg", "\\\\imma-fs-0003\\loes.kenis$\\documents\\Test3_CsharpMethods.xlsx", "\\\\imma-fs-0003\\loes.kenis$\\documents\\Test3_CsharpMethods_KenisLoes.xlsx", "\\\\imma-fs-0003\\loes.kenis$\\documents\\Xubuntu-imma.ova", "\\\\imma-fs-0003\\loes.kenis$\\documents\\[Content_Types].xml" }
+> string[] justAnArray = { "Eline", "Billy", "Loes", "Karam", "Mathias", "Timour", "Michiel", "Liam", "Wout", "Tom" };
+> Console.WriteLine(justAnArray);
+System.String[]
+> Console.WriteLine(justAnArray[7])
+Liam
+> File.ReadAllText(@"\\imma-fs-0003\loes.kenis$\documents\Loes Soft\namen.csv");
+> File.ReadAllText(@"\\imma-fs-0003\loes.kenis$\documents\Loes Soft\namen.csv")
+"naam;voornaam;leeftijd\nJanssens;Jos;20\nFransen;Willy;21\nLiekens;Evelien;22"
+> int[] getallen = new int[5];
+> getallen[0]
+0
+> getallen[1]
+0
+> getallen[5]
+De index ligt buiten de matrixgrenzen.
+> getallen[4]
+0
+> int[] somArray = new int[8];
+> int[] somArray = new int[];
+(1,25): error CS1586: Array creation must have array size or array initializer
+> int[] somArray;
+> int som = 0;
+. for (var i = 0; i<somArray.Length; i++)
+. {
+.     som += somArray[i];
+. }
+De objectverwijzing is niet op een exemplaar van een object ingesteld.
+> Console.WriteLine(som)
+0
+> int som = 0;
+. for (var i = 0; i<=somArray.Length; i++)
+. {
+.     som += somArray[i];
+. }
+De objectverwijzing is niet op een exemplaar van een object ingesteld.
+> getallen[3] = 7;
+> getallen[1] = 666;
+> int som = 0;
+. for (var i = 0; i<=somArray.Length; i++)
+. {
+.     som += somArray[i];
+. }
+De objectverwijzing is niet op een exemplaar van een object ingesteld.
+> void BerekenDeSom(int[] list)
+. {
+.     int som = 0;
+.     for (var i = 0; i < list.Length; i++)
+.     {
+.         som += list[i];
+.     }
+.     Console.WriteLine(som);
+. }
+> BerekenDeSom();
+(1,1): error CS7036: There is no argument given that corresponds to the required formal parameter 'list' of 'BerekenDeSom(int[])'
+> string s = "Jan;DePan;27";
+> s.IndexOf(';');
+> s.IndexOf(';')
+3
+> s.LastIndexOf(';')
+9
+> s.Substring(4, 8);
+> s.Substring(4, 8)
+"DePan;27"
+> s.Insert(4, "jajaja")
+"Jan;jajajaDePan;27"
+> s
+"Jan;DePan;27"
+> s.ToUpper
+(1,3): error CS0428: Cannot convert method group 'ToUpper' to non-delegate type 'object'. Did you intend to invoke the method?
+> s.ToUpper();
+> s
+"Jan;DePan;27"
+> s = s.ToUpper()
+"JAN;DEPAN;27"
+> s.Split()
+string[1] { "JAN;DEPAN;27" }
+> s.Split(";")
+(1,9): error CS1503: Argument 1: cannot convert from 'string' to 'char'
+> s.Split(';')
+string[3] { "JAN", "DEPAN", "27" }
+> 
